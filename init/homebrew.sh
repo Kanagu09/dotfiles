@@ -5,7 +5,7 @@ echo_error () {
 }
 
 # install homebrew
-if [ `which breww` ]; then
+if [ `which brew` ]; then
     echo "brew is already installed"
 else
     echo "Installing homebrew..."
