@@ -9,10 +9,11 @@ if [ `which brew` ]; then
     echo "brew is already installed"
 else
     echo "Installing homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.profile"
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    mkdir $HOME/.linuxbrew
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/.linuxbrew
+    echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.profile"
+    eval "$(/$HOME/.linuxbrew/bin/brew shellenv)"
     sudo apt-get install build-essential
+    source $HOME/.profile
+    brew update
 fi
-
-
