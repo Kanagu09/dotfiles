@@ -13,7 +13,7 @@ echo_installing () {
 }
 
 # install
-APPS="gcc net-tools unar neofetch sl"
+APPS="gcc unar neofetch sl"
 set -- $APPS
 
 for APP in $APPS
@@ -25,3 +25,11 @@ do
         brew install $APP
     fi
 done
+
+APP="net-tools"
+if [ `which ifconfig` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    brew install $APP
+fi

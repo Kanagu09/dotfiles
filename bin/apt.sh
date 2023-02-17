@@ -46,3 +46,22 @@ else
     echo_installing $APP
     sudo apt install thunderbird
 fi
+
+APP="zoom"
+if [ `which $APP` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    wget http://zoom.us/client/latest/zoom_amd64.deb
+    sudo dpkg -i zoom_amd64.deb
+    sudo apt install libgl1-mesa-glx libegl1-mesa libxcb-xtest0
+    rm zoom_amd64.deb
+fi
+
+APP="oneko"
+if [ `which $APP` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    sudo apt install oneko
+fi
