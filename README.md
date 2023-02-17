@@ -9,5 +9,10 @@ sh ./init/homebrew.sh
 sh ./init/zsh.sh
 ```
 
-2. re-login
+2. Re-login
 
+3. Install application
+
+```sh
+sh ./init/install.sh
+```
