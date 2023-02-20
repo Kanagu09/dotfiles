@@ -65,3 +65,11 @@ else
     echo_installing $APP
     sudo apt install oneko
 fi
+
+APP="tex"
+if [ `which $APP` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    sudo apt install texlive-full
+fi
