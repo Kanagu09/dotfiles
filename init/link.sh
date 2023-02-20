@@ -7,7 +7,12 @@ set -- $FILES
 
 for FILE in $FILES
 do
-    if [ ! -e ./etc/$FILE ]; then
+    if [ -e $PWD/etc/$FILE ]; then
+        echo "make link of $FILE"
+        rm $HOME/$FILE
+        ln -s $PWD/etc/$FILE $HOME/$FILE
+    else
+        echo "copy and make link of $FILE"
         cp $HOME/$FILE $PWD/etc/$FILE
         rm $HOME/$FILE
         ln -s $PWD/etc/$FILE $HOME/$FILE
