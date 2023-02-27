@@ -2,3 +2,4 @@
 sh bin/apt.sh
 sh bin/brew.sh
 sh bin/snap.sh
+sh bin/pip.sh
