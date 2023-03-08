@@ -16,3 +16,9 @@ sh ./init/zsh.sh
 ```sh
 sh ./init/install.sh
 ```
+
+4. Make link of dotfiles.
+
+```sh
+sh ./init/link.sh
+```
