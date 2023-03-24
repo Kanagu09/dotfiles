@@ -70,3 +70,14 @@ else
     echo_installing $APP
     sudo apt install python3-pip
 fi
+
+APP="docker"
+if [ `which $APP` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    sudo apt update
+    sudo apt install docker-ce
+fi
