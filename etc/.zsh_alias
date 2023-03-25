@@ -52,6 +52,7 @@ alias "grba"="git rebase --abort"
 alias "grbc"="git rebase --continue"
 alias "gs"="git status"
 alias "gsc"="git switch --create"
+alias "gsu"="git stash -u"
 alias "gsw"="git switch"
 alias "gswc"="git switch --create"
 
