@@ -22,3 +22,11 @@ else
     echo_installing $APP
     brew install $APP
 fi
+
+APP="rust"
+if [ `which rustc cargo` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    brew install $APP
+fi
