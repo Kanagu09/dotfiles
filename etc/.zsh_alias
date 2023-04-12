@@ -60,6 +60,11 @@ alias "gswc"="git switch --create"
 alias "o"="xdg-open ."
 alias "open"="xdg-open"
 
+# editor
+alias "vi"="micro"
+alias "vim"="micro"
+alias "nano"="micro"
+
 # other
 alias "_"="sudo"
 alias "c"="clear"
