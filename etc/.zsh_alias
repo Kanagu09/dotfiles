@@ -88,6 +88,12 @@ alias -g H='| head'
 alias -g L='| less'
 alias -g T='| tail'
 
+# suffix
+alias -s {png,jpg,jpeg,PNG,JPG,JPEG}=open
+alias -s {txt,md}=open
+alias -s {htm,html}=open
+alias -s {zip,tar.gz,lzh}=unar
+
 # execute ls after cd
 function chpwd() {
     ls
