@@ -92,6 +92,7 @@ alias -g T='| tail'
 alias -s {png,jpg,jpeg,PNG,JPG,JPEG}=open
 alias -s {txt,md}=open
 alias -s {htm,html}=open
+alias -s {pdf}=open
 alias -s {zip,tar.gz,lzh}=unar
 
 # execute ls after cd
