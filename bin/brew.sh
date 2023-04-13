@@ -24,7 +24,7 @@ else
 fi
 
 APP="rust"
-if [ `which rustc cargo` ] ; then
+if [ `which cargo` ] ; then
     echo_installed $APP
 else
     echo_installing $APP
