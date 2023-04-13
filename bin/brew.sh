@@ -2,7 +2,7 @@
 . ./lib/echo.sh
 
 # install
-APPS="gcc unar neofetch sl micro"
+APPS="gcc unar neofetch sl act micro"
 set -- $APPS
 
 for APP in $APPS
