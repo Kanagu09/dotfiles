@@ -77,6 +77,10 @@ alias "w"="which"
 alias "grep"="grep --color=auto"
 alias "diff"="diff --color=auto"
 
+# weather
+alias "weather"="curl wttr.in"
+alias "moon"="curl wttr.in/moon"
+
 # COM.. -> COM ..
 alias "cd.."="cd .."
 alias "open."="xdg-open ."
