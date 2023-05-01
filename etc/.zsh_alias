@@ -1,13 +1,23 @@
 # cd
-alias "..."="../.."
-alias "...."="../../.."
-alias "....."="../../../.."
-alias "......"="../../../../.."
+alias "..."="cd ../.."
+alias "...."="cd ../../.."
+alias "....."="cd ../../../.."
+alias "......"="cd ../../../../.."
 
-alias "..2"="../.."
-alias "..3"="../../.."
-alias "..4"="../../../.."
-alias "..5"="../../../../.."
+alias "..2"="cd ../.."
+alias "..3"="cd ../../.."
+alias "..4"="cd ../../../.."
+alias "..5"="cd ../../../../.."
+
+alias "cd ..."="cd ../.."
+alias "cd ...."="cd ../../.."
+alias "cd ....."="cd ../../../.."
+alias "cd ......"="cd ../../../../.."
+
+alias "cd ..2"="cd ../.."
+alias "cd ..3"="cd ../../.."
+alias "cd ..4"="cd ../../../.."
+alias "cd ..5"="cd ../../../../.."
 
 alias "1"="cd -1"
 alias "2"="cd -2"
@@ -68,10 +78,12 @@ alias "nano"="micro"
 # other
 alias "_"="sudo"
 alias "c"="clear"
+alias "e"="exit"
 alias "h"="history"
-alias "q"="exit"
+alias "q"="quit"
 alias "v"="code ."
 alias "w"="which"
+alias "sht"="shutdown now"
 
 # color
 alias "grep"="grep --color=auto"
