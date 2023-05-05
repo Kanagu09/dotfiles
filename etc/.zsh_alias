@@ -56,6 +56,10 @@ alias "gsu"="git stash -u"
 alias "gsw"="git switch"
 alias "gswc"="git switch --create"
 
+# python3
+alias "python"="python3"
+alias "py"="python3"
+
 # xdg-open
 alias "o"="xdg-open ."
 alias "open"="xdg-open"
@@ -99,6 +103,7 @@ alias -s {png,jpg,jpeg,PNG,JPG,JPEG}=open
 alias -s {txt,md}=open
 alias -s {htm,html}=open
 alias -s pdf=open
+alias -s py=python3
 alias -s {zip,tar.gz,lzh}=unar
 
 # execute ls after cd

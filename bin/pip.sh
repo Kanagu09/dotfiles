@@ -7,11 +7,11 @@ set -- $APPS
 
 for APP in $APPS
 do
-    if `pip show $APP > /dev/null` ; then
+    if `pip3 show $APP > /dev/null` ; then
         echo_installed $APP
     else
         echo_installing $APP
-        pip install $APP
+        pip3 install $APP
     fi
 done
 

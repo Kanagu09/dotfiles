@@ -63,14 +63,6 @@ else
     sudo apt install texlive-full
 fi
 
-APP="pip"
-if [ `which $APP` ] ; then
-    echo_installed $APP
-else
-    echo_installing $APP
-    sudo apt install python3-pip
-fi
-
 APP="docker"
 if [ `which $APP` ] ; then
     echo_installed $APP
