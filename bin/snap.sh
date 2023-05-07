@@ -7,7 +7,7 @@ set -- $APPS
 
 for APP in $APPS
 do
-    if `which $APP` ; then
+    if `which $APP > /dev/null` ; then
         echo_installed $APP
     else
         echo_installing $APP
