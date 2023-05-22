@@ -78,6 +78,9 @@ alias "q"="exit"
 alias "so"="source"
 alias "v"="code ."
 alias "w"="which"
+alias "sz"="source ~/.zshrc"
+alias "sus"="systemctl suspend"
+alias "reb"="reboot"
 alias "sht"="shutdown now"
 
 # color
