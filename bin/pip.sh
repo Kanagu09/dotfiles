@@ -2,7 +2,7 @@
 . ./lib/echo.sh
 
 # install
-APPS="numpy matplotlib"
+APPS="numpy matplotlib panda"
 set -- $APPS
 
 for APP in $APPS
