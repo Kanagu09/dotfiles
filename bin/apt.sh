@@ -4,6 +4,17 @@
 cd $HOME/Downloads
 
 # install
+APPS="thunderbird oneko"
+for APP in $APPS
+do
+	if [ `which $APP` ] ; then
+   		echo_installed $APP
+	else
+    	echo_installing $APP
+    	sudo apt install $APP
+	fi
+done
+
 APP="google-chrome"
 if [ `which $APP` ] ; then
     echo_installed $APP
@@ -28,14 +39,6 @@ else
     rm ./microsoft.gpg
 fi
 
-APP="thunderbird"
-if [ `which $APP` ] ; then
-    echo_installed $APP
-else
-    echo_installing $APP
-    sudo apt install thunderbird
-fi
-
 APP="zoom"
 if [ `which $APP` ] ; then
     echo_installed $APP
@@ -45,14 +48,6 @@ else
     sudo dpkg -i zoom_amd64.deb
     sudo apt install libgl1-mesa-glx libegl1-mesa libxcb-xtest0
     rm zoom_amd64.deb
-fi
-
-APP="oneko"
-if [ `which $APP` ] ; then
-    echo_installed $APP
-else
-    echo_installing $APP
-    sudo apt install oneko
 fi
 
 APP="tex"
@@ -72,4 +67,12 @@ else
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
     sudo apt update
     sudo apt install docker-ce
+fi
+
+APP="wg"
+if [ `which $APP` ] ; then
+    echo_installed $APP
+else
+    echo_installing $APP
+    sudo apt install wireguard-tools
 fi
