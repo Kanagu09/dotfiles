@@ -13,3 +13,6 @@ source $ZSH/oh-my-zsh.sh
 
 # alias_file
 source $HOME/.zsh_alias
+
+# 日本語ファイル名の表示
+setopt print_eight_bit
