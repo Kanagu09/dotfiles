@@ -65,6 +65,11 @@ alias "cr"="cargo run"
 alias "copy"="xsel --clipboard --input"
 alias "paste"="xsel --clipboard --output"
 
+# vpn
+alias "vpn"="nmcli con show"
+alias "vpn-up"="sudo nmcli con up id"
+alias "vpn-down"="sudo nmcli con down id"
+
 # xdg-open
 alias "o"="xdg-open ."
 alias "open"="xdg-open"
