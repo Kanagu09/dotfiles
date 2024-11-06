@@ -4,3 +4,4 @@ sh bin/snap.sh
 brew bundle --file bin/Brewfile
 sh bin/npm.sh
 sh bin/pip.sh
+sh bin/rustup.sh
