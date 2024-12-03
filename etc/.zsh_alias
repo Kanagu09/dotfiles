@@ -115,7 +115,6 @@ alias -g C="| xsel --clipboard --input"
 alias -g G="| grep --color=auto"
 alias -g H="| head"
 alias -g L="| less"
-alias -g P="| xsel --clipboard --output"
 alias -g T="| tail"
 
 # suffix
