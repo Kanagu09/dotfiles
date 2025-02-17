@@ -71,6 +71,9 @@ alias "vpn"="nmcli con show"
 alias "vpn-up"="sudo nmcli con up id"
 alias "vpn-down"="sudo nmcli con down id"
 
+# dns
+alias "dns-restart"="service systemd-resolved restart"
+
 # xdg-open
 alias "o"="xdg-open ."
 alias "open"="xdg-open"
