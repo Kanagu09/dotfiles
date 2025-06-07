@@ -78,11 +78,6 @@ alias "dns-restart"="sudo service systemd-resolved restart"
 alias "o"="xdg-open ."
 alias "open"="xdg-open"
 
-# editor
-alias "vi"="micro"
-alias "vim"="micro"
-alias "nano"="micro"
-
 # other
 alias "_"="sudo"
 alias "c"="clear"
